@@ -1,1 +1,2 @@
+# .s2i/environment
 MY_ENV_VAR=hellothere
