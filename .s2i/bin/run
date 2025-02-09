@@ -1,0 +1,7 @@
+#!/bin/bash
+# .s2i/bin/run
+
+MY_RUNTIME_ENV_VAR="hello friends how are you"
+echo "Custom ENV VAR: MY_RUNTIME_ENV_VAR=${MY_RUNTIME_ENV_VAR}"
+
+exec /usr/libexec/s2i/run
