@@ -1,0 +1,10 @@
+#!/bin/bash
+# .s2i/bin/assemble
+
+# Print out the custom environment variable (ensure it’s set via .s2i/environment or your build config)
+echo "Custom build: MY_ENV_VAR=${MY_ENV_VAR}"
+
+# Optionally perform other pre-assemble actions here
+
+# Delegate to the default assemble script to continue the build process.
+exec /usr/libexec/s2i/assemble
